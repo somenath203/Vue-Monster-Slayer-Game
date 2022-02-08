@@ -48,7 +48,7 @@
             <span
               :class="{'log--player': logMessage.actionBy === 'You', 'log--monster': logMessage.actionBy === 'Monster'}"
             >
-              {{ logMessage.actionBy === 'You' ? 'Player' : 'Monster'}}
+              {{ logMessage.actionBy === 'You' ? 'You' : 'Monster'}}
             </span>
 
             <span v-if="logMessage.actionType === 'heal'">
@@ -57,7 +57,7 @@
             >
 
             <span v-else>
-              attacked and damaged
+              attacked and damaged the health by
               <span class="log--damage">{{ logMessage.actionValue }}</span>
             </span>
           </li>
