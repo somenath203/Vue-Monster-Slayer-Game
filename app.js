@@ -78,9 +78,6 @@ const app = Vue.createApp({
       }
       return { width: this.playerHealth + '%' };
     },
-    mayUseSpecialAttack() {
-      return this.currentRound % 3 !== 0;
-    },
   },
   watch: {
     playerHealth(value) {
